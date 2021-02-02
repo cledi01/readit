@@ -4,6 +4,7 @@
 	"description": "Awesome project developed with TypeORM.",
 	"devDependencies": {
 		"@types/cors": "^2.8.9",
+		"@types/faker": "^5.1.6",
 		"@types/multer": "^1.4.5",
 		"@types/node": "^14.14.11",
 		"concurrently": "^5.3.0",
@@ -35,7 +36,7 @@
 		"typeorm-seeding": "^1.6.1"
 	},
 	"scripts": {
-		"start": "ts-node src/server.ts",
+		"start": "node build/server.js",
 		"server": "nodemon --exec ts-node src/server.ts",
 		"client": "cd client && npm run dev",
 		"typeorm": "ts-node ./node_modules/typeorm/cli.js",
